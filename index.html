@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Imanuel Fernando</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .marquee {
+      background-color: #1f6dd9;
+      color: #fff;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .slider {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      height: 100%;
+      transition: transform 0.8s ease;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .slider h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 40px;
+      color: white;
+      font-size: 32px;
+      border-radius: 10px;
+      z-index: 2;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background-color: #2980b9;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .box {
+      background-color: #eaeff2;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .box h2 {
+      color: #2980b9;
+    }
+
+    img.profile {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #21618c;
+    }
+
+    .media video,
+    .media audio {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #2980b9;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+
+    .guest-message {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .guest-message strong {
+      color: #2980b9;
+    }
+
+    .delete-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="marquee">
+  <marquee behavior="scroll" direction="left">Selamat datang di portofolio Imanuel Fernando! Terima kasih telah berkunjung 👋</marquee>
+</div>
+
+<div class="slider">
+  <div class="slides" id="sliderImages">
+    <img src="uisi-kampus-swasta-berkelas-internasional-U1S-thumb.jpg" alt="Gambar 1" />
+    <img src="20240723_150957-2527100743.webp" alt="Gambar 2" />
+    <img src="20230911082553.jpg" alt="Gambar 3" />
+    <img src="c6b144d6139f6e93ebbce51bdd99d1f7.jpg" alt="Gambar 4" />
+    <img src="WhatsApp Image 2025-03-22 at 03.42.57.jpeg" alt="Gambar 5" />
+    <img src="WhatsApp Image 2025-04-14 at 09.41.40.jpeg" alt="Gambar 6" />
+  </div>
+  <h1>Imanuel Fernando</h1>
+</div>
+
+<nav>
+  <a href="#tentang">Tentang Saya</a>
+  <a href="#pendidikan">Riwayat Pendidikan</a>
+  <a href="#video">Video</a>
+  <a href="#audio">Audio</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<div class="container">
+  <div class="box" id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Halo! Saya Imanuel Fernando, mahasiswa Sistem Informasi yang antusias dengan dunia teknologi. Saya menyukai pemrograman, multimedia, serta memiliki ketertarikan besar dalam desain UI/UX dan pengembangan web. Selain itu, saya juga aktif membuat konten digital, baik berupa video maupun audio kreatif.</p>
+    <img src="WhatsApp Image 2025-04-14 at 09.41.02.jpeg" alt="Foto Imanuel" class="profile" />
+  </div>
+
+  <div class="box" id="pendidikan">
+    <h2>Riwayat Pendidikan</h2>
+    <p><strong>Universitas Internasional Semen Indonesia</strong><br />S1 Program Studi Sistem Informasi, Semester 4</p>
+    <p><strong>SMK Semen Gresik</strong><br />Rekayasa Perangkat Lunak (RKPL) - Lulus 2023</p>
+  </div>
+
+  <div class="box media" id="video">
+    <h2>Video</h2>
+    <p>Berikut adalah salah satu video projek multimedia yang saya buat:</p>
+    <video controls>
+      <source src="WhatsApp Video 2025-04-20 at 22.29.10.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung pemutar video.
+    </video>
+  </div>
+
+  <div class="box media" id="audio">
+    <h2>Audio Narasi</h2>
+    <p>Berikut adalah audio narasi yang pernah saya produksi:</p>
+    <audio controls>
+      <source src="WhatsApp Ptt 2025-04-20 at 22.36.32.mp3" type="audio/mpeg" />
+      Browser Anda tidak mendukung pemutar audio.
+    </audio>
+  </div>
+
+  <div class="box" id="kontak">
+    <h2>Kontak</h2>
+    <p>Jika Anda memiliki pertanyaan, saran, atau ingin bekerja sama, silakan isi formulir di bawah ini.</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" rows="4" required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <!-- Buku Tamu -->
+  <div class="box" id="bukuTamu">
+    <h2>Buku Tamu</h2>
+    <p>Silakan tinggalkan pesan atau kesan Anda di buku tamu ini:</p>
+    <form id="formBukuTamu">
+      <label for="namaTamu">Nama:</label>
+      <input type="text" id="namaTamu" required />
+
+      <label for="kesan">Kesan & Pesan:</label>
+      <textarea id="kesan" rows="4" required></textarea>
+
+      <button type="submit">Kirim ke Buku Tamu</button>
+    </form>
+    <div id="daftarPesan"></div>
+  </div>
+</div>
+
+<footer>
+  © 2025 Imanuel. Semua hak dilindungi.
+</footer>
+
+<!-- JavaScript untuk slider dan buku tamu -->
+<script>
+  const slidesContainer = document.getElementById("sliderImages");
+  const images = slidesContainer.querySelectorAll("img");
+  let currentIndex = 0;
+
+  function slideNext() {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+      currentIndex = 0;
+    }
+    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  setInterval(slideNext, 2000);
+
+  // Buku Tamu Script
+  document.getElementById("formBukuTamu").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nama = document.getElementById("namaTamu").value.trim();
+    const pesan = document.getElementById("kesan").value.trim();
+
+    if (nama && pesan) {
+      const daftar = document.getElementById("daftarPesan");
+      const kotak = document.createElement("div");
+      kotak.classList.add("guest-message");
+      kotak.innerHTML = `<strong>${nama}</strong><br>${pesan}<button class='delete-button' onclick='hapusPesan(this)'>Hapus</button>`;
+      daftar.appendChild(kotak);
+
+      this.reset();
+    }
+  });
+
+  function hapusPesan(button) {
+    const pesanElement = button.parentElement;
+    pesanElement.remove();
+  }
+</script>
+
+</body>
+</html>
